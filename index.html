@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de Enfermería Profesional</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Servicios de enfermería profesional a domicilio en la Región de O’Higgins. Atención personalizada 24/7 con personal altamente calificado.">
+    <meta name="keywords" content="enfermería en Rancagua, cuidados de enfermería en Machalí, atención a domicilio en San Fernando, enfermera profesional en Graneros, salud en Rengo, geriatría en Pichidegua, postoperatorio en Doñihue, curaciones avanzadas en Coinco, hospitalización domiciliaria en Peumo, enfermería a domicilio en Pichilemu, cuidados de enfermería en Mostazal, atención a domicilio en Coltauco, enfermera profesional en Requínoa, salud geriátrica en Chépica, servicios de enfermería en Las Cabras, postoperatorio en La Estrella, hospitalización domiciliaria en Nancagua, curaciones avanzadas en Paredones, atención geriátrica en Navidad, cuidados de enfermería en Rancagua, enfermera profesional en San Fernando.">
+    <meta name="author" content="Margarita Rubilar - Enfermera Universitaria">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Servicios de Enfermería Profesional en Rancagua y Región de O’Higgins">
+    <meta property="og:description" content="Cuidados de enfermería a domicilio con atención personalizada y profesional. Servicio 24/7 para pacientes postquirúrgicos, adultos mayores y enfermos crónicos.">
+    <meta property="og:image" content="/assets/img/margarita_rubilar_enfermeria_rancagua_foto_perfil.png">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicios de Enfermería Profesional en Rancagua">
+    <meta name="twitter:description" content="Atención personalizada de enfermería a domicilio con disponibilidad 24/7 en la Región de O’Higgins.">
+    <meta name="twitter:image" content="/assets/img/margarita_rubilar_enfermeria_rancagua_foto_perfil.png">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
+    frame-src 'self' https://www.google.com/maps/;
+    img-src 'self' data: https://placehold.co;">
 </head>
 <body>
     <header>
@@ -15,10 +33,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#quien-soy">Quien Soy</a></li>
-                    <li><a href="https://wa.me/56975409648">Contacto</a></li>
+                    <li><a href="#inicio" title="Volver al inicio">Inicio</a></li>
+                    <li><a href="#servicios" title="Ver los servicios que ofrecemos">Servicios</a></li>
+                    <li><a href="#quien-soy" title="Conocer a la enfermera Margarita Rubilar">Quien Soy</a></li>
+                    <li><a href="https://wa.me/56975409648" title="Contacto vía WhatsApp">Contacto</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -31,21 +49,21 @@
         <div class="slider-container">
             <div class="slider">
                 <div class="slide active">
-                    <img src="/placeholder.svg?height=600&width=1200" alt="Enfermería profesional">
+                    <img src="https://placehold.co/1200x600/EEE/31343C" alt="Enfermería profesional">
                     <div class="slide-content">
                         <h2>Cuidados profesionales a domicilio</h2>
                         <p>Atención personalizada con los más altos estándares de calidad</p>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="/placeholder.svg?height=600&width=1200" alt="Equipo médico">
+                    <img src="https://placehold.co/1200x600/EEE/31343C" alt="Equipo médico">
                     <div class="slide-content">
                         <h2>Personal altamente calificado</h2>
                         <p>Nuestro equipo cuenta con amplia experiencia y certificaciones</p>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="/placeholder.svg?height=600&width=1200" alt="Atención al paciente">
+                    <img src="https://placehold.co/1200x600/EEE/31343C" alt="Atención al paciente">
                     <div class="slide-content">
                         <h2>Disponibilidad 24/7</h2>
                         <p>Estamos para atenderte cuando más nos necesites</p>
@@ -53,13 +71,17 @@
                 </div>
             </div>
             <div class="slider-controls">
-                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="prev-btn" aria-label="Previous Slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 <div class="slider-dots">
                     <span class="dot active" data-index="0"></span>
                     <span class="dot" data-index="1"></span>
                     <span class="dot" data-index="2"></span>
                 </div>
-                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                <button class="next-btn" aria-label="Next Slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -132,6 +154,9 @@
                     </div>
                 </div>
             </div>
+            <h2 class="section-title">Zona de cobertura</h2>
+            <p>Atención ambulatoria en domicilio con cobertura en gran parte de la Región de O’Higgins, incluyendo manejo de tratamientos endovenosos, bombas de infusión continua y procedimientos avanzados de enfermería.</p>
+            <iframe class="mapaServicio" src="https://www.google.com/maps/d/embed?mid=1p91cxPmEy2ifUKIbuYQq-tgkePwGdA4&ehbc=2E312F&output=embed&z=8" width="100%" height="480" title="Mapa de servicios de enfermería en la Región de O'Higgins" sandbox="allow-scripts allow-same-origin allow-popups" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
@@ -140,7 +165,7 @@
             <h2 class="section-title">Quien Soy</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="/assets/img/margarita_rubilar_enfermeria_rancagua_foto_perfil.png" alt="Equipo de enfermería">
+                    <img src="/assets/img/margarita_rubilar_enfermeria_rancagua_foto_perfil.webp" alt="Equipo de enfermería">
                 </div>
                 <div class="about-text">
                     <h3>Margarita Eliana Rubilar Quilodran</h3>
@@ -216,20 +241,11 @@
                 <div class="footer-links">
                     <h3>Enlaces rápidos</h3>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#quien-soy">Quien Soy</a></li>
-                        <li><a href="https://wa.me/56975409648">Contacto</a></li>
+                        <li><a href="#inicio" title="Volver al inicio">Inicio</a></li>
+                        <li><a href="#servicios" title="Ver los servicios que ofrecemos">Servicios</a></li>
+                        <li><a href="#quien-soy" title="Conocer a la enfermera Margarita Rubilar">Quien Soy</a></li>
+                        <li><a href="https://wa.me/56975409648" title="Contacto vía WhatsApp">Contacto</a></li>
                     </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Síguenos</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -243,7 +259,7 @@
         <span>Contáctanos</span>
     </a>
 
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
 

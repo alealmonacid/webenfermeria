@@ -59,8 +59,8 @@ img {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #3498db;
-  color: white;
+  background-color: #0066cc; /* Un color de fondo más oscuro */
+  color: #ffffff; /* Texto blanco para un buen contraste */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -463,8 +463,8 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #25d366;
-  color: white;
+  background-color: #0B652C; 
+  color: #ffffff;
   width: auto;
   height: 60px;
   border-radius: 30px;
@@ -599,3 +599,10 @@ footer {
   border-bottom: 1px solid #f0f0f0;
 }
 
+.mapaServicio {
+  border: none;
+}
+
+.mapaServicio::-webkit-scrollbar {
+  display: none;
+}
