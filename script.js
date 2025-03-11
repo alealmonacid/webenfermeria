@@ -167,32 +167,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
-
-  // Form submission
-  const contactForm = document.querySelector(".contact-form")
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault()
-
-      // Here you would normally send the form data to a server
-      // For this example, we'll just show a success message
-
-      const formData = new FormData(this)
-      const formValues = {}
-
-      for (const [key, value] of formData.entries()) {
-        formValues[key] = value
-      }
-
-      console.log("Form submitted:", formValues)
-
-      // Reset form
-      this.reset()
-
-      // Show success message
-      alert("¡Gracias por contactarnos! Te responderemos a la brevedad.")
-    })
-  }
 })
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita el envío tradicional del formulario
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+
+  let whatsappNumber = "56975409648"; // Reemplaza con tu número de WhatsApp (sin + ni espacios)
+  let whatsappMessage = `Hola, mi nombre es *${name}*.
+📧 Correo: ${email}
+📞 Teléfono: ${phone}
+✉️ Mensaje: ${message}`;
+
+  let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  
+  window.open(whatsappURL, "_blank");
+});
 
