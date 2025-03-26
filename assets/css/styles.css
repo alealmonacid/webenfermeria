@@ -94,12 +94,6 @@ header .container {
   align-items: center;
   padding: 15px;
 }
-
-.logo h1 {
-  color: #3498db;
-  font-size: 1.8rem;
-}
-
 nav ul {
   display: flex;
 }
@@ -515,6 +509,9 @@ footer {
 @media (max-width: 768px) {
   nav {
     display: none;
+  }
+  .logo{
+    width: 30vw;
   }
 
   .menu-toggle {
