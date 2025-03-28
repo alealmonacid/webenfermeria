@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileMenuContent = `
             <div class="mobile-menu-header">
                 <div class="logo">
-                    <h1>EnfermeríaPro</h1>
+                    <img src="assets/img/logomr.png" alt="Logo Margarita Rubilar" class="logo">
                 </div>
                 <div class="close-menu">
                     <i class="fas fa-times"></i>
